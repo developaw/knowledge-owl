@@ -186,10 +186,10 @@ In terms of deciding when to use prop drilling and when to use provide/inject - 
 **One** way data passing **from** parent component **to** a deeper child component.
 
 ```mermaid
-flowchart TD
-    A@{ shape: comment, label: "provide" } --> B
+flowchart TD    
+    A["A {  provide }"] --> B
     B -->C
-    B --> D@{ shape: comment, label: "inject" }
+    B --> D["D {  inject }"]
     B -->E
 ```
 
